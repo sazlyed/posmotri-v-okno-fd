@@ -9,7 +9,10 @@ html {
 }
 
 .page {
+  display: flex;
   margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -58,12 +61,6 @@ ol {
   block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-.page {
-  display: flex;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .content {
