@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -52,35 +52,35 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
 .page {
   display: flex;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 }
 
 .content {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 534px;
   grid-template-areas: 
   "result content__details";
-  column-gap: 30px;
-  grid-template-rows: 534px;
-  grid-template-columns: 1fr 1fr;
   align-content: center;
+  column-gap: 30px;
 }
 
 
 .result {
-  grid-area: "result";
   display: flex;
   flex-direction: column;
+  grid-area: "result";
   justify-content: end;
 }
 
@@ -91,10 +91,10 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   min-width: 711px;
   max-height: 386px;
   margin-bottom: 16px;
-  position: relative;
 }
 
 .result__video {
@@ -105,30 +105,30 @@ ol {
 }
 
 .title {
-  font-size: 75px;
   font-weight: 700;
+  font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
 }
 
 .content__details {
-  grid-area: "content__details";
-  margin: auto;
-  font-family: 'Oswald', 'Sans-serif';
   display: flex;
   flex-direction: column;
+  grid-area: "content__details";
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  margin: auto;
   padding-top: 2px;
+  font-family: 'Oswald', 'Sans-serif';
 }
 
 .content__list-container {
-  overflow-y: auto;
-  overflow-x: hidden;
+  position: relative;
   width: 398px;
   height: 298px;
-  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .content__video-card {
@@ -146,8 +146,8 @@ ol {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  color: #fff;
   row-gap: 6px;
+  color: #fff;
 }
 
 .content__card-link {
@@ -174,12 +174,12 @@ ol {
 
 
 .content__video-card-title {
-  font-family: 'Oswald', 'Sans-serif';
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 30px;
   margin-top: 2px;
+  font-family: 'Oswald', 'Sans-serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .content__accent {
@@ -188,15 +188,15 @@ ol {
 
 .content__list-item {
   display: block;
+  margin-right: 3px;
   margin-bottom: 30px;
   margin-left: 3px;
-  margin-right: 3px;
 }
 
 .content__video-card-description {
+  font-family: 'Fira Sans Condensed', 'Sans-serif';
   font-size: 18px;
   line-height: 16.2px;
-  font-family: 'Fira Sans Condensed', 'Sans-serif';
 }
 
 .search-form__checkbox-list {
@@ -211,8 +211,8 @@ ol {
 
 .search-form__label {
   display: flex;
-  width: fit-content;
   gap: 5px;
+  width: fit-content;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -228,17 +228,17 @@ ol {
 }
 
 .search-form__textfield {
+  width: 225px;
+  height: 27px;
   border: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background-color: transparent;
-  width: 225px;
-  height: 27px;
   color: #fff;
   font-family: 'Fira Sans Condensed', 'sans-serif';
   font-size: 18px;
   line-height: 21.6px;
   text-align: left;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -250,8 +250,8 @@ ol {
 
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed','sans-serif' ;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 21.6px;
 }
 
@@ -266,21 +266,21 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  padding: 1px;
   background-color: #fff;
   background-clip: content-box;
-  padding: 1px;
 }
 
 .button {
-  background-color: transparent;
   border: 1px solid #fff;
+  color: inherit;
   font-family: 'Fira Sans Condensed', 'Sans-serif';
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 21.6px;
   text-align: center;
+  background-color: transparent;
   cursor: pointer;
-  color: inherit;
 }
 
 .button:focus {
