@@ -173,7 +173,9 @@ ol {
 
 
 .content__video-card-title {
+  max-width: 192px;
   margin-top: 2px;
+  overflow: hidden;
   font-family: 'Oswald', 'Sans-serif';
   font-weight: 700;
   font-size: 30px;
@@ -181,8 +183,6 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-  max-width: 192px; 
 }
 
 .content__accent {
